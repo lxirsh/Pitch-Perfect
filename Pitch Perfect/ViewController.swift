@@ -27,5 +27,8 @@ class ViewController: UIViewController {
         println("in recordAudio")
     }
 
+    @IBAction func stopRecording(sender: AnyObject) {
+        recordingInProgress.hidden = true
+    }
 }
 

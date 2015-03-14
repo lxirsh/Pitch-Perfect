@@ -31,36 +31,56 @@
                                 <color key="textColor" red="0.14509803921568626" green="0.28235294117647058" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKv-rp-LAX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stop button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="124" y="475" width="153" height="100"/>
+                                </variation>
+                                <connections>
+                                    <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="98q-XX-TiL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="umA-bf-RmB" secondAttribute="centerX" constant="-2" id="3IH-gO-dpd"/>
                             <constraint firstAttribute="centerX" secondItem="rHV-IT-ZpH" secondAttribute="centerX" constant="-2.5" id="Acb-hU-Wbe"/>
+                            <constraint firstAttribute="centerX" secondItem="VKv-rp-LAX" secondAttribute="centerX" constant="-0.5" id="Xwh-bk-6st"/>
                             <constraint firstItem="rHV-IT-ZpH" firstAttribute="top" secondItem="umA-bf-RmB" secondAttribute="bottom" constant="14" id="hza-pG-L5d"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="VKv-rp-LAX" secondAttribute="bottom" constant="25" id="lcQ-fG-P5A"/>
                             <constraint firstAttribute="centerY" secondItem="umA-bf-RmB" secondAttribute="centerY" id="r7P-1V-vv2"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="umA-bf-RmB"/>
                                 <exclude reference="rHV-IT-ZpH"/>
+                                <exclude reference="VKv-rp-LAX"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Acb-hU-Wbe"/>
-                                <exclude reference="hza-pG-L5d"/>
                                 <exclude reference="3IH-gO-dpd"/>
                                 <exclude reference="r7P-1V-vv2"/>
+                                <exclude reference="Acb-hU-Wbe"/>
+                                <exclude reference="hza-pG-L5d"/>
+                                <exclude reference="Xwh-bk-6st"/>
+                                <exclude reference="lcQ-fG-P5A"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="umA-bf-RmB"/>
                                 <include reference="rHV-IT-ZpH"/>
+                                <include reference="VKv-rp-LAX"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Acb-hU-Wbe"/>
-                                <include reference="hza-pG-L5d"/>
                                 <include reference="3IH-gO-dpd"/>
                                 <include reference="r7P-1V-vv2"/>
+                                <include reference="Acb-hU-Wbe"/>
+                                <include reference="hza-pG-L5d"/>
+                                <include reference="Xwh-bk-6st"/>
+                                <include reference="lcQ-fG-P5A"/>
                             </mask>
                         </variation>
                     </view>
@@ -70,10 +90,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-351" y="334"/>
+            <point key="canvasLocation" x="-624" y="320"/>
         </scene>
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="stop button" width="100" height="100"/>
     </resources>
 </document>
