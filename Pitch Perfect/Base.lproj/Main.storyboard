@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-511.5" y="302"/>
+            <point key="canvasLocation" x="-562.5" y="302"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LuV-Vo-HjA">
@@ -124,26 +124,57 @@
             </objects>
             <point key="canvasLocation" x="-1234.5" y="302"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controler View Controller-->
         <scene sceneID="IqV-67-mUQ">
             <objects>
-                <viewController id="gek-cr-niH" sceneMemberID="viewController">
+                <viewController id="gek-cr-niH" customClass="PlaySoundsViewControlerViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Opt-xr-E8N"/>
                         <viewControllerLayoutGuide type="bottom" id="U5N-SD-bfp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VAF-sF-dOZ">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JN2-Uh-5cZ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="slow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="JN2-Uh-5cZ" secondAttribute="centerX" constant="118" id="nAd-ck-nR4"/>
+                            <constraint firstAttribute="centerY" secondItem="JN2-Uh-5cZ" secondAttribute="centerY" constant="144" id="via-Nx-LrH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="JN2-Uh-5cZ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="nAd-ck-nR4"/>
+                                <exclude reference="via-Nx-LrH"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="JN2-Uh-5cZ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="nAd-ck-nR4"/>
+                                <include reference="via-Nx-LrH"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qho-PQ-YmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="302"/>
+            <point key="canvasLocation" x="118.5" y="302"/>
         </scene>
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="slow" width="100" height="100"/>
         <image name="stop button" width="50" height="50"/>
     </resources>
 </document>
