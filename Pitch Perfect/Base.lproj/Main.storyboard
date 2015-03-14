@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G17-xR-FMq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Record-->
@@ -140,20 +141,23 @@
                                 <state key="normal" image="slow">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="playSlow:" destination="gek-cr-niH" eventType="touchUpInside" id="gNb-rX-So2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="JN2-Uh-5cZ" secondAttribute="centerX" constant="118" id="nAd-ck-nR4"/>
-                            <constraint firstAttribute="centerY" secondItem="JN2-Uh-5cZ" secondAttribute="centerY" constant="144" id="via-Nx-LrH"/>
+                            <constraint firstItem="JN2-Uh-5cZ" firstAttribute="top" secondItem="Opt-xr-E8N" secondAttribute="bottom" constant="50" id="BF3-iV-dbs"/>
+                            <constraint firstItem="JN2-Uh-5cZ" firstAttribute="leading" secondItem="VAF-sF-dOZ" secondAttribute="leadingMargin" constant="30" id="ccM-9p-a5n"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="JN2-Uh-5cZ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="nAd-ck-nR4"/>
-                                <exclude reference="via-Nx-LrH"/>
+                                <exclude reference="BF3-iV-dbs"/>
+                                <exclude reference="ccM-9p-a5n"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -161,8 +165,8 @@
                                 <include reference="JN2-Uh-5cZ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="nAd-ck-nR4"/>
-                                <include reference="via-Nx-LrH"/>
+                                <include reference="BF3-iV-dbs"/>
+                                <include reference="ccM-9p-a5n"/>
                             </mask>
                         </variation>
                     </view>

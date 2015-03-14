@@ -22,6 +22,8 @@ class PlaySoundsViewControlerViewController: UIViewController {
     }
     
 
+    @IBAction func playSlow(sender: AnyObject) {
+    }
     /*
     // MARK: - Navigation
 
