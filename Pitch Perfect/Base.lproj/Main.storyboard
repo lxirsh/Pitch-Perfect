@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.45992661594989992" green="0.62127290395475909" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="umA-bf-RmB" secondAttribute="centerX" constant="-2" id="3IH-gO-dpd"/>
                             <constraint firstAttribute="centerX" secondItem="rHV-IT-ZpH" secondAttribute="centerX" constant="-2.5" id="Acb-hU-Wbe"/>
@@ -95,13 +95,14 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="umA-bf-RmB" id="Ylg-Pe-zBa"/>
                         <outlet property="recordingInProgress" destination="rHV-IT-ZpH" id="l40-ph-mSd"/>
                         <outlet property="stopButton" destination="VKv-rp-LAX" id="RkO-GH-hXS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-624" y="320"/>
+            <point key="canvasLocation" x="-874.5" y="312"/>
         </scene>
     </scenes>
     <resources>
