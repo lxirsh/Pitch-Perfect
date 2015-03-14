@@ -35,8 +35,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="umA-bf-RmB" secondAttribute="centerX" constant="-2" id="3IH-gO-dpd"/>
-                            <constraint firstItem="umA-bf-RmB" firstAttribute="centerX" secondItem="rHV-IT-ZpH" secondAttribute="centerX" constant="-0.5" id="aIU-cC-xwo"/>
-                            <constraint firstAttribute="centerY" secondItem="rHV-IT-ZpH" secondAttribute="centerY" constant="-71" id="lRi-97-BCx"/>
+                            <constraint firstAttribute="centerX" secondItem="rHV-IT-ZpH" secondAttribute="centerX" constant="-2.5" id="Acb-hU-Wbe"/>
+                            <constraint firstItem="rHV-IT-ZpH" firstAttribute="top" secondItem="umA-bf-RmB" secondAttribute="bottom" constant="14" id="hza-pG-L5d"/>
                             <constraint firstAttribute="centerY" secondItem="umA-bf-RmB" secondAttribute="centerY" id="r7P-1V-vv2"/>
                         </constraints>
                         <variation key="default">
@@ -46,9 +46,9 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="3IH-gO-dpd"/>
-                                <exclude reference="aIU-cC-xwo"/>
                                 <exclude reference="r7P-1V-vv2"/>
-                                <exclude reference="lRi-97-BCx"/>
+                                <exclude reference="Acb-hU-Wbe"/>
+                                <exclude reference="hza-pG-L5d"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -58,9 +58,9 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="3IH-gO-dpd"/>
-                                <include reference="aIU-cC-xwo"/>
                                 <include reference="r7P-1V-vv2"/>
-                                <include reference="lRi-97-BCx"/>
+                                <include reference="Acb-hU-Wbe"/>
+                                <include reference="hza-pG-L5d"/>
                             </mask>
                         </variation>
                     </view>
