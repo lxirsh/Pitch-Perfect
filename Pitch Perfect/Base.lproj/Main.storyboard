@@ -25,7 +25,7 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NsU-ES-HAY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHV-IT-ZpH">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHV-IT-ZpH">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
                                 <color key="textColor" red="0.14509803921568626" green="0.28235294117647058" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,10 +45,10 @@
                                 <exclude reference="rHV-IT-ZpH"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="3IH-gO-dpd"/>
-                                <exclude reference="r7P-1V-vv2"/>
                                 <exclude reference="Acb-hU-Wbe"/>
                                 <exclude reference="hza-pG-L5d"/>
+                                <exclude reference="3IH-gO-dpd"/>
+                                <exclude reference="r7P-1V-vv2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -57,10 +57,10 @@
                                 <include reference="rHV-IT-ZpH"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="3IH-gO-dpd"/>
-                                <include reference="r7P-1V-vv2"/>
                                 <include reference="Acb-hU-Wbe"/>
                                 <include reference="hza-pG-L5d"/>
+                                <include reference="3IH-gO-dpd"/>
+                                <include reference="r7P-1V-vv2"/>
                             </mask>
                         </variation>
                     </view>
