@@ -187,6 +187,9 @@
                                         <include reference="Vuu-sT-HpQ"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="stopAudio:" destination="gek-cr-niH" eventType="touchUpInside" id="WIC-Cc-si2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -205,12 +208,12 @@
                                 <exclude reference="S3N-iI-w96"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="BDT-vG-6Ux"/>
                                 <exclude reference="BF3-iV-dbs"/>
                                 <exclude reference="ccM-9p-a5n"/>
+                                <exclude reference="iXV-zm-lEu"/>
                                 <exclude reference="Yz2-ab-pXF"/>
                                 <exclude reference="eo4-Th-BTQ"/>
-                                <exclude reference="iXV-zm-lEu"/>
-                                <exclude reference="BDT-vG-6Ux"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -220,12 +223,12 @@
                                 <include reference="S3N-iI-w96"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="BDT-vG-6Ux"/>
                                 <include reference="BF3-iV-dbs"/>
                                 <include reference="ccM-9p-a5n"/>
+                                <include reference="iXV-zm-lEu"/>
                                 <include reference="Yz2-ab-pXF"/>
                                 <include reference="eo4-Th-BTQ"/>
-                                <include reference="iXV-zm-lEu"/>
-                                <include reference="BDT-vG-6Ux"/>
                             </mask>
                         </variation>
                     </view>
