@@ -171,22 +171,32 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3N-iI-w96">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="Vuu-sT-HpQ"/>
+                                </constraints>
                                 <state key="normal" image="stop button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="166" y="530" width="105" height="50"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Vuu-sT-HpQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Vuu-sT-HpQ"/>
+                                    </mask>
                                 </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="S3N-iI-w96" secondAttribute="centerX" constant="-18.5" id="8Xj-62-Yx2"/>
+                            <constraint firstItem="U5N-SD-bfp" firstAttribute="top" secondItem="S3N-iI-w96" secondAttribute="bottom" constant="20" id="BDT-vG-6Ux"/>
                             <constraint firstItem="JN2-Uh-5cZ" firstAttribute="top" secondItem="Opt-xr-E8N" secondAttribute="bottom" constant="50" id="BF3-iV-dbs"/>
                             <constraint firstItem="yB3-WM-XuZ" firstAttribute="top" secondItem="Opt-xr-E8N" secondAttribute="bottom" constant="50" id="Yz2-ab-pXF"/>
                             <constraint firstItem="JN2-Uh-5cZ" firstAttribute="leading" secondItem="VAF-sF-dOZ" secondAttribute="leadingMargin" constant="30" id="ccM-9p-a5n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yB3-WM-XuZ" secondAttribute="trailing" constant="30" id="eo4-Th-BTQ"/>
-                            <constraint firstAttribute="centerY" secondItem="S3N-iI-w96" secondAttribute="centerY" constant="-255" id="gHc-qD-uhC"/>
+                            <constraint firstAttribute="centerX" secondItem="S3N-iI-w96" secondAttribute="centerX" constant="-0.5" id="iXV-zm-lEu"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -199,8 +209,8 @@
                                 <exclude reference="ccM-9p-a5n"/>
                                 <exclude reference="Yz2-ab-pXF"/>
                                 <exclude reference="eo4-Th-BTQ"/>
-                                <exclude reference="8Xj-62-Yx2"/>
-                                <exclude reference="gHc-qD-uhC"/>
+                                <exclude reference="iXV-zm-lEu"/>
+                                <exclude reference="BDT-vG-6Ux"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -214,8 +224,8 @@
                                 <include reference="ccM-9p-a5n"/>
                                 <include reference="Yz2-ab-pXF"/>
                                 <include reference="eo4-Th-BTQ"/>
-                                <include reference="8Xj-62-Yx2"/>
-                                <include reference="gHc-qD-uhC"/>
+                                <include reference="iXV-zm-lEu"/>
+                                <include reference="BDT-vG-6Ux"/>
                             </mask>
                         </variation>
                     </view>
