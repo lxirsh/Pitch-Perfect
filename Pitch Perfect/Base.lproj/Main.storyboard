@@ -169,36 +169,53 @@
                                     <action selector="playFast:" destination="gek-cr-niH" eventType="touchUpInside" id="4S0-gG-kAn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3N-iI-w96">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="stop button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="166" y="530" width="105" height="50"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="S3N-iI-w96" secondAttribute="centerX" constant="-18.5" id="8Xj-62-Yx2"/>
                             <constraint firstItem="JN2-Uh-5cZ" firstAttribute="top" secondItem="Opt-xr-E8N" secondAttribute="bottom" constant="50" id="BF3-iV-dbs"/>
                             <constraint firstItem="yB3-WM-XuZ" firstAttribute="top" secondItem="Opt-xr-E8N" secondAttribute="bottom" constant="50" id="Yz2-ab-pXF"/>
                             <constraint firstItem="JN2-Uh-5cZ" firstAttribute="leading" secondItem="VAF-sF-dOZ" secondAttribute="leadingMargin" constant="30" id="ccM-9p-a5n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yB3-WM-XuZ" secondAttribute="trailing" constant="30" id="eo4-Th-BTQ"/>
+                            <constraint firstAttribute="centerY" secondItem="S3N-iI-w96" secondAttribute="centerY" constant="-255" id="gHc-qD-uhC"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="JN2-Uh-5cZ"/>
                                 <exclude reference="yB3-WM-XuZ"/>
+                                <exclude reference="S3N-iI-w96"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="BF3-iV-dbs"/>
                                 <exclude reference="ccM-9p-a5n"/>
                                 <exclude reference="Yz2-ab-pXF"/>
                                 <exclude reference="eo4-Th-BTQ"/>
+                                <exclude reference="8Xj-62-Yx2"/>
+                                <exclude reference="gHc-qD-uhC"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="JN2-Uh-5cZ"/>
                                 <include reference="yB3-WM-XuZ"/>
+                                <include reference="S3N-iI-w96"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="BF3-iV-dbs"/>
                                 <include reference="ccM-9p-a5n"/>
                                 <include reference="Yz2-ab-pXF"/>
                                 <include reference="eo4-Th-BTQ"/>
+                                <include reference="8Xj-62-Yx2"/>
+                                <include reference="gHc-qD-uhC"/>
                             </mask>
                         </variation>
                     </view>
