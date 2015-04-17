@@ -188,6 +188,9 @@
                                         <include reference="fTQ-Iu-Zb8"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="gek-cr-niH" eventType="touchUpInside" id="KYA-jP-gcd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
