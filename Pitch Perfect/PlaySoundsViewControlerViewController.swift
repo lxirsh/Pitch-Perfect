@@ -35,6 +35,9 @@ class PlaySoundsViewControlerViewController: UIViewController {
     
     func playAudio() {
         audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
+
         audioPlayer.currentTime = 0.0
         audioPlayer.play()
     }
