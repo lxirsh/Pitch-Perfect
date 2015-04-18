@@ -26,11 +26,14 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NsU-ES-HAY"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHV-IT-ZpH">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHV-IT-ZpH">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
                                 <color key="textColor" red="0.14509803921568626" green="0.28235294117647058" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="169" y="364" width="67" height="14"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKv-rp-LAX">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -54,11 +57,22 @@
                                     <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="98q-XX-TiL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0S-NQ-eWJ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                <color key="textColor" red="0.1450980392" green="0.28235294119999998" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="152" y="360" width="102" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.45992661594989992" green="0.62127290395475909" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="umA-bf-RmB" secondAttribute="centerX" constant="-2" id="3IH-gO-dpd"/>
                             <constraint firstAttribute="centerX" secondItem="rHV-IT-ZpH" secondAttribute="centerX" constant="-2.5" id="Acb-hU-Wbe"/>
+                            <constraint firstItem="n0S-NQ-eWJ" firstAttribute="top" secondItem="umA-bf-RmB" secondAttribute="bottom" constant="10" id="Uyr-Vq-2tt"/>
+                            <constraint firstAttribute="centerX" secondItem="n0S-NQ-eWJ" secondAttribute="centerX" constant="-3" id="We9-qe-MXP"/>
                             <constraint firstAttribute="centerX" secondItem="VKv-rp-LAX" secondAttribute="centerX" constant="-0.5" id="Xwh-bk-6st"/>
                             <constraint firstItem="rHV-IT-ZpH" firstAttribute="top" secondItem="umA-bf-RmB" secondAttribute="bottom" constant="14" id="hza-pG-L5d"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="VKv-rp-LAX" secondAttribute="bottom" constant="25" id="lcQ-fG-P5A"/>
@@ -69,14 +83,17 @@
                                 <exclude reference="umA-bf-RmB"/>
                                 <exclude reference="rHV-IT-ZpH"/>
                                 <exclude reference="VKv-rp-LAX"/>
+                                <exclude reference="n0S-NQ-eWJ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="lcQ-fG-P5A"/>
+                                <exclude reference="3IH-gO-dpd"/>
+                                <exclude reference="r7P-1V-vv2"/>
+                                <exclude reference="Uyr-Vq-2tt"/>
+                                <exclude reference="We9-qe-MXP"/>
                                 <exclude reference="Acb-hU-Wbe"/>
                                 <exclude reference="hza-pG-L5d"/>
                                 <exclude reference="Xwh-bk-6st"/>
-                                <exclude reference="3IH-gO-dpd"/>
-                                <exclude reference="r7P-1V-vv2"/>
+                                <exclude reference="lcQ-fG-P5A"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -84,14 +101,17 @@
                                 <include reference="umA-bf-RmB"/>
                                 <include reference="rHV-IT-ZpH"/>
                                 <include reference="VKv-rp-LAX"/>
+                                <include reference="n0S-NQ-eWJ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="lcQ-fG-P5A"/>
+                                <include reference="3IH-gO-dpd"/>
+                                <include reference="r7P-1V-vv2"/>
+                                <include reference="Uyr-Vq-2tt"/>
+                                <include reference="We9-qe-MXP"/>
                                 <include reference="Acb-hU-Wbe"/>
                                 <include reference="hza-pG-L5d"/>
                                 <include reference="Xwh-bk-6st"/>
-                                <include reference="3IH-gO-dpd"/>
-                                <include reference="r7P-1V-vv2"/>
+                                <include reference="lcQ-fG-P5A"/>
                             </mask>
                         </variation>
                     </view>
@@ -100,6 +120,7 @@
                         <outlet property="recordButton" destination="umA-bf-RmB" id="Ylg-Pe-zBa"/>
                         <outlet property="recordingInProgress" destination="rHV-IT-ZpH" id="l40-ph-mSd"/>
                         <outlet property="stopButton" destination="VKv-rp-LAX" id="RkO-GH-hXS"/>
+                        <outlet property="tapToRecord" destination="n0S-NQ-eWJ" id="LC4-Ud-XFb"/>
                         <segue destination="gek-cr-niH" kind="show" identifier="stopRecording" id="MXX-9R-PsP"/>
                     </connections>
                 </viewController>
