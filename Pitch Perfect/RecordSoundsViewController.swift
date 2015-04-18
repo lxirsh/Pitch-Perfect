@@ -39,7 +39,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         stopButton.hidden = false
         recordButton.enabled = false
         recordingInProgress.hidden = false
-        //TODO: Record the user's voice
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         
         var currentDateTime = NSDate()
@@ -59,15 +58,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.meteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
-        //println("in recordAudio")
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
         if(flag){
             recordedAudio = RecordedAudio(filePathURL: recorder.url, title: recorder.url.lastPathComponent!)
-//            recordedAudio.filePathURL = recorder.url
-//            recordedAudio.title = recorder.url.lastPathComponent
-            //TODO: Step 2 - Move to the next scene aka perform a segue
             self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         }else{
             println("Recording was not successful")
@@ -86,7 +81,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
     @IBAction func stopRecording(sender: AnyObject) {
         recordingInProgress.hidden = true
-        // Stop recording the user's voice
         audioRecorder.stop()
         var audioSession = AVAudioSession.sharedInstance();
         audioSession.setActive(false, error: nil)
